@@ -43,7 +43,7 @@ bool Trie::loadToTree()
 		input >> tempWord;
 		alphaCount = tempWord.length();
 		currNodePtr = root;
-		for (int j = 0; j < alphaCount; j++)			//iterating through each alphabet and inserting it [CAN BE DONE IN A SEPERATE FUNCTION BY PASSING IT ONLY A WORD STRING (WHICH CAN ALSO BE DONE RECURSIVELY, WILL THINK ABOUT IT LATER!!)]
+		for (int j = 0; j < alphaCount; j++)			//iterating through each alphabet and inserting it
 		{
 			if (currNodePtr->characters[static_cast<int>(tempWord[j]) - 97])
 			{
